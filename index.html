@@ -7,7 +7,15 @@
     <title>VueJS Intro</title>
 </head>
 <body>
-    <div id="myApp"></div>
+    <div id="myApp">
+        <h1>{{ quote }}</h1>
+        <p>{{ message }}</p>
+
+        <button v-on:click="changeQuote">
+            Change quote 
+        </button>
+
+    </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
     
