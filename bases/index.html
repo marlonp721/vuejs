@@ -8,14 +8,13 @@
 </head>
 <body>
     <div id="myApp">
-        <h1> Batman quotes </h1>
-        <ul>
-            <li v-for="(quote, index) in quotes">
-                <span>{{ index+1 }}.- {{ quote.quote }} </span>
-                <blockquote>-{{ quote.author }}</blockquote>
-                
-            </li>
-        </ul>
+        <h1>{{ quote }}</h1>
+        <p>{{ message }}</p>
+
+        <button v-on:click="changeQuote">
+            Change quote 
+        </button>
+
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
